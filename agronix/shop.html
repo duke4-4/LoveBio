@@ -56,10 +56,43 @@
             text-align: center;
             opacity: 0;
             transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
          }
 
          .product-thumb:hover .product-item-action-2 {
             opacity: 1;
+         }
+
+         .register-btn, .call-btn {
+            background: #31512a;
+            color: #fff;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+         }
+
+         .register-btn:hover, .call-btn:hover {
+            background: #243d1f;
+            color: #fff;
+            transform: translateY(-2px);
+         }
+
+         .register-btn i, .call-btn i {
+            font-size: 18px;
+         }
+
+         /* Remove modal-related styles */
+         .modal,
+         .modal-dialog,
+         .modal-content {
+            display: none;
          }
       </style>
    </head>
@@ -71,12 +104,11 @@
       <!-- Add your site or application content here -->
 
       <!-- pre loader area start -->
-      <div id="loading">
+      <div id="loading" class="d-none d-sm-block" style="display: none !important;">
          <div id="loading-center">
             <div id="loading-center-absolute">
-               <div class="loading-icon text-center d-sm-flex align-items-center justify-content-center">
-                  <img class=" mr-10" src="./assets/LoveBio svg.png" alt="">
-                  <!-- <img src="assets/img/preloder.png" alt=""> -->
+               <div class="loading-icon text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid mx-auto" style="max-width: 200px; width: 80%; height: auto;" src="./assets/LoveBio svg.png" alt="LoveBio Logo">
                </div>
             </div>
          </div>  
@@ -161,7 +193,7 @@
          </div>
       </header>
       <!-- sidebar area start -->
-      <div class="sidebar__area">
+     <div class="sidebar__area">
          <div class="sidebar__wrapper">
             <div class="sidebar__close">
                <button class="sidebar__close-btn" id="sidebar__close-btn">
@@ -171,7 +203,7 @@
             <div class="sidebar__content">
                <div class="sidebar__logo mb-40">
                   <a href="index.html">
-                  <img src="assets/img/logo/logo-2.png" alt="logo">
+                     <img src="./assets/Lovebio_logo.png" alt="logo">
                   </a>
                </div>
                <div class="sidebar__search mb-25">
@@ -182,7 +214,7 @@
                </div>
                <div class="mobile-menu fix"></div>
                <div class="sidebar__text d-none d-lg-block">
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you a complete account of the system and expound the actual teachings of the great explore</p>
+                
                </div>
                <div class="sidebar__img d-none d-lg-block mb-20">
                   <div class="row gx-2">
@@ -242,7 +274,7 @@
                            <i class="fal fa-map-marker-alt"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A, Mirnada City Tower, NYC</a>
+                           <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">6 Melrose Road, Malborough, Harare</a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -250,7 +282,7 @@
                            <i class="far fa-phone"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a href="tel:+012-345-6789">088889797697</a>
+                           <a href="tel:+012-345-6789">0772270385</a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -258,7 +290,7 @@
                            <i class="fal fa-envelope"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a href="mailto:support@gmail.com">support@mail.com</a>
+                           <a href="mailto:support@gmail.com">info@lovebio.com</a>
                         </div>
                      </li>
                   </ul>
@@ -276,6 +308,7 @@
       </div>
       <!-- sidebar area end -->      
       <div class="body-overlay"></div>
+      <!-- sidebar area end -->
       <!-- sidebar area end -->
 
       <main>
@@ -334,10 +367,8 @@
                                           <img src="./assets/OLevel.jpeg" alt="O Level Biology">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -368,10 +399,8 @@
                                           <img src="./assets/OLevel.jpeg" alt="O Level Biology">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -402,10 +431,8 @@
                                           <img src="assets/As1.jpeg" alt="A Level Biology">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -436,10 +463,8 @@
                                           <img src="assets/As1.jpeg" alt="A Level Biology">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -470,10 +495,8 @@
                                           <img src="assets/A2.jpeg" alt="A2 Biology">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -504,10 +527,8 @@
                                           <img src="assets/general_science.jpeg" alt="General Science">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -538,10 +559,8 @@
                                           <img src="assets/img/product/shop-p-9.jpg" alt="1 On 1">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -572,10 +591,8 @@
                                           <img src="assets/img/product/shop-p-10.jpg" alt="Online">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -606,10 +623,8 @@
                                           <img src="assets/img/product/shop-p-11.jpg" alt="Group Class (3)">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
@@ -640,10 +655,8 @@
                                           <img src="assets/img/product/shop-p-12.jpg" alt="Specialized Topics">
                                        </a>
                                        <div class="product-item-action-2">
-                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
-                                             <i class="fal fa-eye"></i>
-                                          </a>
-                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
+                                          <a href="contact.html" class="register-btn"><i class="fal fa-edit"></i></a>
+                                          <a href="contact.html" class="call-btn"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">

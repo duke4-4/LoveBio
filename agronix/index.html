@@ -31,12 +31,11 @@
       <!-- Add your site or application content here -->
 
       <!-- pre loader area start -->
-      <div id="loading">
+     <div id="loading" class="d-none d-sm-block" style="display: none !important;">
          <div id="loading-center">
             <div id="loading-center-absolute">
-               <div class="loading-icon text-center d-sm-flex align-items-center justify-content-center">
-                  <img class=" mr-10" src="./assets/LoveBio svg.png" alt="">
-                  <!-- <img src="assets/img/preloder.png" alt=""> -->
+               <div class="loading-icon text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid mx-auto" style="max-width: 200px; width: 80%; height: auto;" src="./assets/LoveBio svg.png" alt="LoveBio Logo">
                </div>
             </div>
          </div>  
@@ -150,78 +149,40 @@
             <div class="sidebar__content">
                <div class="sidebar__logo mb-40">
                   <a href="index.html">
-                  <img src="./assets/Lovebio_logo.png" alt="logo">
+                     <img src="./assets/Lovebio_logo.png" alt="logo">
                   </a>
                </div>
                <div class="sidebar__search mb-25">
                   <form action="#">
-                     <input type="text" placeholder="What are you searching for?">
-                     <button type="submit" ><i class="far fa-search"></i></button>
+                     <input type="text" placeholder="Search courses...">
+                     <button type="submit"><i class="far fa-search"></i></button>
                   </form>
                </div>
-               <div class="mobile-menu fix"></div>
-               <div class="sidebar__text d-none d-lg-block">
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you a complete account of the system and expound the actual teachings of the great explore</p>
-               </div>
-               <div class="sidebar__img d-none d-lg-block mb-20">
-                  <div class="row gx-2">
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-7.jpg">
-                              <img src="assets/img/project/project-7.jpg" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-8.jpg">
-                              <img src="assets/img/project/project-8.jpg" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-9.jpg">
-                              <img src="assets/img/project/project-9.jpg" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-10.jpg">
-                              <img src="assets/img/project/project-10.jpg" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-13.jpg">
-                              <img src="assets/img/project/project-13.jpg" alt="">
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-4">
-                        <div class="sidebar__single-img w-img mb-10">
-                           <a class="image-popups" href="assets/img/project/project-12.jpg">
-                              <img src="assets/img/project/project-12.jpg" alt="">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="sidebar__map d-none d-lg-block mb-15">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
+               <div class="mobile-menu fix">
+                  <nav>
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Courses</a></li>
+                        <li><a href="project.html">Material</a>
+                           <ul class="sub-menu">
+                              <li><a href="project.html">Study Material</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </nav>
                </div>
                <div class="sidebar__contact mt-30 mb-20">
                   <h4>Contact Info</h4>
-
                   <ul>
                      <li class="d-flex align-items-center">
                         <div class="sidebar__contact-icon mr-15">
                            <i class="fal fa-map-marker-alt"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A, Mirnada City Tower, NYC</a>
+                           <a href="#">6 Melrose road Malborough</a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -229,7 +190,7 @@
                            <i class="far fa-phone"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a href="tel:+012-345-6789">0772270385</a>
+                           <a href="tel:0772270385">0772270385</a>
                         </div>
                      </li>
                      <li class="d-flex align-items-center">
@@ -237,7 +198,7 @@
                            <i class="fal fa-envelope"></i>
                         </div>
                         <div class="sidebar__contact-text">
-                           <a href="mailto:support@gmail.com">support@mail.com</a>
+                           <a href="mailto:info@lovebio.com">info@lovebio.com</a>
                         </div>
                      </li>
                   </ul>
@@ -302,9 +263,9 @@
                      <div class="tp-about-content-1">
                         <p>Understanding differs for every individual. The idea is to love what we are doing. That way, it’s easy to understand. School does not have to be complicated. I give basic examples in everyday life to help you understand. We start with what we understand and know and then build from that. I am committed to helping my students in all learning areas and producing the best possible results for them. I prepare students to tackle all aspects of an area of study and ways to answer questions.</p>
                            <div class="author-info mt-20">
-                              <img src="assets/img/supporters/author.jpg" alt="">
+                              <img src="./assets/t1.png" alt="">
                               <div class="author-content">
-                                 <h5>Valentina</h5>
+                                 <h5>Rumhizha</h5>
                                  <span>Tutor</span>
                               </div>
                            </div>
@@ -601,12 +562,10 @@
                            <div class="product-item-image">
                               <img src="./assets/OLevel.jpeg" alt="" class="img-fluid">
                               <div class="product-item-action">
-                                 <a href="wishlist.html"><i class="fal fa-exchange"></i></a>
-                                 <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
+                                 <a href="contact.html" class="action-btn"><i class="fal fa-edit"></i></a>
                               </div>
                            </div>
-                           <h4 class="product-item-title"><a href="shop-details.html">O'Level/IGCSE</a></h4>
+                           <h4 class="product-item-title"><a href="contact.html">O'Level/IGCSE</a></h4>
                            <h5 class="product-item-price mb-35">$15.00/Hr</h5>
                         </div>
                      </div>
@@ -615,12 +574,10 @@
                            <div class="product-item-image">
                               <img src="assets/As1.jpeg" alt="" class="img-fluid">
                               <div class="product-item-action">
-                                 <a href="wishlist.html"><i class="fal fa-exchange"></i></a>
-                                 <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
+                                 <a href="contact.html" class="action-btn"><i class="fal fa-edit"></i></a>
                               </div>
                            </div>
-                           <h4  class="product-item-title"><a href="shop-details.html">AS Biology</a></h4>
+                           <h4 class="product-item-title"><a href="contact.html">AS Biology</a></h4>
                            <h5 class="product-item-price mb-35">$15.00/Hr</h5>
                         </div>
                      </div>
@@ -629,12 +586,10 @@
                            <div class="product-item-image">
                               <img src="assets/A2.jpeg" alt="" class="img-fluid">
                               <div class="product-item-action">
-                                 <a href="wishlist.html"><i class="fal fa-exchange"></i></a>
-                                 <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
+                                 <a href="contact.html" class="action-btn"><i class="fal fa-edit"></i></a>
                               </div>
                            </div>
-                           <h4 class="product-item-title"><a href="shop-details.html">A2 Biology</a></h4>
+                           <h4 class="product-item-title"><a href="contact.html">A2 Biology</a></h4>
                            <h5 class="product-item-price mb-35">$15.00/Hr</h5>
                         </div>
                      </div>
@@ -643,12 +598,10 @@
                            <div class="product-item-image">
                               <img src="assets/general_science.jpeg" alt="" class="img-fluid">
                               <div class="product-item-action">
-                                 <a href="wishlist.html"><i class="fal fa-exchange"></i></a>
-                                 <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
+                                 <a href="contact.html" class="action-btn"><i class="fal fa-edit"></i></a>
                               </div>
                            </div>
-                           <h4 class="product-item-title"><a href="shop-details.html">General Science</a></h4>
+                           <h4 class="product-item-title"><a href="contact.html">General Science</a></h4>
                            <h5 class="product-item-price mb-35">$15.00/Hr</h5>
                         </div>
                      </div>
