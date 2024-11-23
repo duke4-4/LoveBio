@@ -22,6 +22,46 @@
       <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
       <link rel="stylesheet" href="assets/css/default.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <style>
+         .product-thumb {
+            height: 250px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background: #f8f8f8;
+         }
+
+         .product-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+         }
+
+         .product-item {
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+         }
+
+         .product-item:hover {
+            transform: translateY(-5px);
+         }
+
+         .product-item-action-2 {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            text-align: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+         }
+
+         .product-thumb:hover .product-item-action-2 {
+            opacity: 1;
+         }
+      </style>
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -91,36 +131,15 @@
                      <div class="main-menu-h1 main-menu main-menu-white text-center">
                         <nav id="mobile-menu">
                            <ul>
-                              <li><a href="index.html" class="active">Home</a>
-                                 <!-- <ul class="sub-menu-h1 sub-menu">
-                                    <li><a href="index.html" class="active">Home</a></li>
-                                   
-                                 </ul> -->
-                              </li>
+                              <li><a href="index.html">Home</a></li>
                               <li><a href="about.html">About</a></li>
-                              <li><a href="shop.html">Courses</a>
-                                 <!-- <ul class="sub-menu-h1 sub-menu">
-                                    <li><a href="shop.html">Courses</a></li>
-                                    <li><a href="shop-details.html">Class Schedule</a></li>
-                                    <li><a href="cart.html">Contact</a></li>
-                                    <li><a href="wishlist.html">Assignments</a></li>
-                                    <li><a href="checkout.html">Tuition</a></li>
-                                    <li><a href="team.html">Blog</a></li>
-                                    <li><a href="team-details.html">Forum</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="services-details.html">Service Details</a></li>
-                                 </ul> -->
-                              </li>
+                              <li><a href="shop.html" class="active">Courses</a></li>
                               <li><a href="project.html">Material</a>
                                  <ul class="sub-menu-h1 sub-menu">
                                     <li><a href="project.html">Study Material</a></li>
-                                   
                                  </ul>
                               </li>
-                              <li><a href="gallery.html">Gallery</a>
-                                
-                              </li>
+                              <li><a href="gallery.html">Gallery</a></li>
                               <li><a href="contact.html">Contact</a></li>
                            </ul>
                         </nav>
@@ -309,27 +328,27 @@
                         <div class="product-items mt-40">
                            <div class="row">
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-30">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="./assets/OLevel.jpeg" alt="">
+                                          <img src="./assets/OLevel.jpeg" alt="O Level Biology">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -337,33 +356,33 @@
                                              <a href="shop-details.html">Ordinary Level</a>
                                           </h3>
                                           <span class="woo-price">$15.00/Hr</span>
-                                           <span class="woo-price">2pm-3pm</span>
+                                          <span class="woo-price">2pm-3pm</span>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="./assets/OLevel.jpeg" alt="">
+                                          <img src="./assets/OLevel.jpeg" alt="O Level Biology">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -371,33 +390,33 @@
                                              <a href="shop-details.html">IGCSE</a>
                                           </h3>
                                           <span class="woo-price">$15.00/Hr</span>
-                                           <span class="woo-price">3pm-4pm</span>
+                                          <span class="woo-price">3pm-4pm</span>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/As1.jpeg" alt="">
+                                          <img src="assets/As1.jpeg" alt="A Level Biology">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -405,33 +424,33 @@
                                              <a href="shop-details.html">A Level </a>
                                           </h3>
                                           <span class="woo-price">$15.00/Hr</span>
-                                           <span class="woo-price">10am-11am</span>
+                                          <span class="woo-price">10am-11am</span>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/As1.jpeg" alt="">
+                                          <img src="assets/As1.jpeg" alt="A Level Biology">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -439,33 +458,33 @@
                                              <a href="shop-details.html">AS Bio</a>
                                           </h3>
                                           <span class="woo-price">$15.00/Hr</span>
-                                           <span class="woo-price">12pm-1pm</span>
+                                          <span class="woo-price">12pm-1pm</span>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-30">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/A2.jpeg" alt="">
+                                          <img src="assets/A2.jpeg" alt="A2 Biology">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/A2.jpeg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -473,33 +492,33 @@
                                              <a href="shop-details.html">A2 Biology</a>
                                           </h3>
                                           <span class="woo-price">$15.00/Hr</span>
-                                           <span class="woo-price">1pm-2pm</span>
+                                          <span class="woo-price">1pm-2pm</span>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/general_science.jpeg" alt="">
+                                          <img src="assets/general_science.jpeg" alt="General Science">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Science</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -507,33 +526,33 @@
                                              <a href="shop-details.html">General Sciences/Hr</a>
                                           </h3>
                                           <span class="woo-price">$15.00Hr</span>
-                                           <span class="woo-price">2pm-3pm</span>
+                                          <span class="woo-price">2pm-3pm</span>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/img/product/shop-p-9.jpg" alt="">
+                                          <img src="assets/img/product/shop-p-9.jpg" alt="1 On 1">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -541,33 +560,33 @@
                                              <a href="shop-details.html">1 On 1</a>
                                           </h3>
                                           <span class="woo-price">$15.00/Hr</span>
-                                           <span class="woo-price">2pm-3pm</span>
+                                          <span class="woo-price">2pm-3pm</span>
                                        </div>
                                     </div>
                                  </div>
-                              </div> 
+                              </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/img/product/shop-p-10.jpg" alt="">
+                                          <img src="assets/img/product/shop-p-10.jpg" alt="Online">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -581,27 +600,27 @@
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-30">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/img/product/shop-p-11.jpg" alt="">
+                                          <img src="assets/img/product/shop-p-11.jpg" alt="Group Class (3)">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -609,33 +628,33 @@
                                              <a href="shop-details.html">Group Class (3)</a>
                                           </h3>
                                           <span class="woo-price">$15.00/Hr</span>
-                                           <span class="woo-price">2pm-3pm</span>
+                                          <span class="woo-price">2pm-3pm</span>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
+                                 <div class="product-item">
                                     <div class="product-thumb gray-bg">
                                        <a href="shop-details.html">
-                                          <img src="assets/img/product/shop-p-12.jpg" alt="">
+                                          <img src="assets/img/product/shop-p-12.jpg" alt="Specialized Topics">
                                        </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
+                                       <div class="product-item-action-2">
+                                          <a href="#" data-bs-toggle="modal" data-bs-target="#productModalId">
+                                             <i class="fal fa-eye"></i>
+                                          </a>
+                                          <a href="contact.html"><i class="fal fa-phone"></i></a>
                                        </div>
                                     </div>
                                     <div class="product__content mt-30">
                                        <div class="rating-area">
-                                          <span>Organic</span>
+                                          <span>Biology</span>
                                           <div class="rating">
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
                                              <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
+                                             <a href="#"><i class="fas fa-star"></i></a>
                                           </div>
                                        </div>
                                        <div class="product-wrapper">
@@ -647,74 +666,8 @@
                                     </div>
                                  </div>
                               </div>
-                              <!-- <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
-                                    <div class="product-thumb gray-bg">
-                                       <a href="shop-details.html">
-                                          <img src="assets/img/product/shop-p-13.jpg" alt="">
-                                       </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
-                                       </div>
-                                    </div>
-                                    <div class="product__content mt-30">
-                                       <div class="rating-area">
-                                          <span>Organic</span>
-                                          <div class="rating">
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
-                                          </div>
-                                       </div>
-                                       <div class="product-wrapper">
-                                          <h3 class="product__title">
-                                             <a href="shop-details.html">Queen's Multigrain Bread</a>
-                                          </h3>
-                                          <span class="woo-price">$5.00</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-xl-3 col-lg-4 col-md-6">
-                                 <div class="product-item mb-45">
-                                    <div class="product-thumb gray-bg">
-                                       <a href="shop-details.html">
-                                          <img src="assets/img/product/shop-p-14.jpg" alt="">
-                                       </a>
-                                       <div class="product-item-action-2 text-center">
-                                          <a href="cart.html"><i class="fal fa-shopping-cart"></i></a>
-                                          <a href="assets/img/product/product-shop-1.jpg" data-bs-toggle="modal" data-bs-target="#productModalId"><i class="fal fa-eye"></i></a>
-                                          <a href="wishlist.html"><i class="fal fa-heart"></i></a>
-                                          
-                                       </div>
-                                    </div>
-                                    <div class="product__content mt-30">
-                                       <div class="rating-area">
-                                          <span>Organic</span>
-                                          <div class="rating">
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="fas fa-star"></i></a>
-                                             <a href="#"><i class="far fa-star"></i></a>
-                                          </div>
-                                       </div>
-                                       <div class="product-wrapper">
-                                          <h3 class="product__title">
-                                             <a href="shop-details.html">Dhaka Dough Flattened Rice</a>
-                                          </h3>
-                                          <span class="woo-price">$7.00</span>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
                            </div>
-                        </div> -->
+                        </div>
                         <div class="pagination-area pt-30 mb-50">
                            <nav aria-label="Page navigation">
                               <ul class="pagination justify-content-center">
